@@ -1,0 +1,26 @@
+nav {  
+    background-color: rgb(195, 160, 219);
+ 
+  }
+
+nav {
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+nav  a{
+    text-decoration: none;
+    color: rgb(35, 8, 61);
+
+  }
+ 
+nav .dropdown-item{
+     display: none;
+ } 
+ 
+ #smallmeny div{
+     background-color: rgb(211, 195, 226);
+ }
+ 

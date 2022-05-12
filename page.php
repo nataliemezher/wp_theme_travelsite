@@ -12,7 +12,10 @@
                 </a>
                 <?php
                 the_content(); ?>
-
+                <div id="our-post-thumbnail">
+                    <?php
+                    the_post_thumbnail('wcm-gallery'); ?>
+                </div>
 
             </article>
     <?php

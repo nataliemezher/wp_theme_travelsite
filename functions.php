@@ -59,7 +59,7 @@ if (!function_exists('mercury_theme_setup')) {
 
 		// Add theme support for document Title tag
 		add_theme_support('title-tag');
-
+		add_theme_support('custom-logo');
 		// Add theme support for Translation
 		//load_theme_textdomain( 'wcmtheme', get_template_directory() . '/language' );
 
@@ -194,7 +194,10 @@ function my_custom_tax()
 		'singular_name'     => _x('travel age', 'taxonomy singular name'),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
+	$args   = [
+		'labels' => $labels,
+		'hierarchical' => false,
+	];
 	register_taxonomy('travel_age', ['wcm_travel', 'travel_camp', 'travel_cup', 'page'], $args);
 
 	//--
@@ -203,7 +206,10 @@ function my_custom_tax()
 		'singular_name'     => _x('travel country', 'taxonomy singular name'),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
+	$args   = [
+		'labels' => $labels,
+		'hierarchical' => false,
+	];
 	register_taxonomy('travel_country', ['wcm_travel', 'travel_camp', 'travel_cup', 'travel_soccer', 'page'], $args);
 
 	//--
@@ -212,7 +218,10 @@ function my_custom_tax()
 		'singular_name'     => _x('travel sport league', 'taxonomy singular name'),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
+	$args   = [
+		'labels' => $labels,
+		'hierarchical' => false,
+	];
 	register_taxonomy('travel_sport_league', ['wcm_travel', 'travel_camp', 'travel_cup', 'travel_soccer', 'page'], $args);
 
 	//--
@@ -221,7 +230,10 @@ function my_custom_tax()
 		'singular_name'     => _x('travel sport type', 'taxonomy singular name'),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
+	$args   = [
+		'labels' => $labels,
+		'hierarchical' => false,
+	];
 	register_taxonomy('travel_sport_type', ['wcm_travel', 'travel_camp', 'travel_cup', 'travel_soccer', 'travel_matches', 'page'], $args);
 
 	$labels = [
@@ -229,7 +241,10 @@ function my_custom_tax()
 		'singular_name'     => _x('travel type', 'taxonomy singular name'),
 		// Läs på om och lägg till fler vi behov!
 	];
-	$args   = [];
+	$args   = [
+		'labels' => $labels,
+		'hierarchical' => false,
+	];
 	register_taxonomy('travel_type', ['wcm_travel', 'travel_camp', 'travel_cup', 'travel_matches', 'page'], $args);
 }
 add_action('init', 'my_custom_tax');
