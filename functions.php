@@ -64,7 +64,7 @@ if (!function_exists('mercury_theme_setup')) {
 		//load_theme_textdomain( 'wcmtheme', get_template_directory() . '/language' );
 
 		add_image_size('wcm-gallery', '500', '300', true);
-		add_image_size('featured_gallery', '300', '150', true);
+		add_image_size('featured_gallery', '300', '200', true);
 	}
 }
 add_action('after_setup_theme', 'mercury_theme_setup');
