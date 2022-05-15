@@ -1,7 +1,6 @@
 <?php $travels_query = new WP_Query([
   'post_type' => 'wcm_travel',
-  'posts_per_page' => 3,
-  'orderby' => 'rand',
+  'posts_per_page' => 4,
 ]) ?>
 
 
@@ -18,15 +17,13 @@
               the_title(); ?></p>
 
         </a>
-
         <div id="our-post-thumbnail">
-          <?php
-          if (has_post_thumbnail('featured_gallery')) {
-            the_post_thumbnail('featured_gallery');
-          } else { ?>
-            <img src="https://kubalubra.is/wp-content/uploads/2017/11/default-thumbnail.jpg" width="200" height="150" alt="">
-
+          <?php if (!empty(get_the_post_thumbnail())) { ?>
+            <?php the_post_thumbnail('featured_gallery'); ?>
+          <?php } else { ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default.jpg" width="200px" height="150" alt="Coming Soon" />
           <?php } ?>
+
 
         </div>
         <div>
@@ -34,7 +31,7 @@
             <?php the_excerpt(); ?>
           </p>
           <a href="<?php
-                    the_permalink(); ?>"><button type="button" class="btn btn-secondary">Read More</button></a>
+                    the_permalink(); ?>"><button type="button" class="btn btn-secondary">Läs mer</button></a>
         </div>
       </div>
 
