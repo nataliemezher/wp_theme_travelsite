@@ -18,7 +18,9 @@
                 $logo = wp_get_attachment_image_src($custom_logo_id);
             } ?>
 
-            <a href="#"><img class="mb-3 mx-auto logo" width="60" height="40" src="<?php echo $logo[0] ?>" alt="Sitelogo"></a>
+
+            <a href="home"><img class="mb-3 mx-auto logo" width="60" height="40" src="<?php echo $logo[0] ?>" alt="Sitelogo"><span>Travelsite</span></a>
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php wp_nav_menu([
@@ -29,6 +31,9 @@
                 ]);
 
                 ?>
+                <div>
+                    <button type="button" class="btn btn-secondary">BOKA NU</button>
+                </div>
             </div>
         </div>
 

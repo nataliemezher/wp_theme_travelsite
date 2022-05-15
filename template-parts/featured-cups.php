@@ -1,8 +1,7 @@
 <?php $cups_query = new WP_Query([
     'post_type' => 'travel_cup',
-    //'orderby' => 'rand',
     'posts_per_page' => 3,
-
+    'orderby' => 'rand',
 ]) ?>
 
 <div class="row pt-5">
@@ -10,7 +9,7 @@
     <?php
     if ($cups_query->have_posts()) :
         while ($cups_query->have_posts()) : $cups_query->the_post(); ?>
-            <div class="col-sm">
+            <div class="pt-2 text-center col-sm">
 
                 <a href="<?php
                             the_permalink(); ?>">

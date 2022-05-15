@@ -4,7 +4,9 @@
             <label for="inputemail" class="visually-hidden"></label>
             <input type="password" class="form-control" id="inputemail" placeholder="sök resa">
         </div>
+
         <div class="col-auto">
+
             <button type="submit" class="btn btn-secondary ">Sök resa</button>
         </div>
     </form>

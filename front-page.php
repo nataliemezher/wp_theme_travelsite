@@ -4,10 +4,10 @@
         <?php the_content(); ?>
     </div>
 
-    <div class="row pt-5" id="smallmeny">
-        <div class="col-md-4 ">TräningsLäger</div>
-        <div class="col-md-4">Cuper</div>
-        <div class="col-md-4 ">Fotbollsresor</div>
+    <div class="text-center row pt-5" id="smallmeny">
+        <div class="col-md-4 "><a href="traningslager"> <button class="btn btn-outline-secondary">TräningsLäger</button></a> </div>
+        <div class="col-md-4"><a href="travelcups"><button class="btn btn-outline-secondary">Cuper</button></a> </div>
+        <div class="col-md-4 "><a href="fotbollsresor"><button class="btn btn-outline-secondary">Fotbollsresor</button></a> </div>
 
     </div>
 
