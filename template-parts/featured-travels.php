@@ -21,7 +21,13 @@
 
         <div id="our-post-thumbnail">
           <?php
-          the_post_thumbnail('featured_gallery'); ?>
+          if (has_post_thumbnail('featured_gallery')) {
+            the_post_thumbnail('featured_gallery');
+          } else { ?>
+            <img src="https://kubalubra.is/wp-content/uploads/2017/11/default-thumbnail.jpg" width="200" height="150" alt="">
+
+          <?php } ?>
+
         </div>
         <div>
           <p>

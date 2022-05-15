@@ -100,6 +100,8 @@ function tn_custom_excerpt_length($length)
 }
 add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 
+
+
 /**
  * Registrera en Custom Post Type
  * https://developer.wordpress.org/plugins/post-types/

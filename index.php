@@ -4,12 +4,7 @@
 		<?php the_content(); ?>
 	</div>
 
-	<div class="row" id="smallmeny">
-		<div class="col-md-4 ">TräningsLäger</div>
-		<div class="col-md-4">Cuper</div>
-		<div class="col-md-4 ">Fotbollsresor</div>
 
-	</div>
 
 	<!--<div>
 		<form class="form-inline active-pink-3 active-pink-4">
