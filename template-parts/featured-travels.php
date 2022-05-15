@@ -1,6 +1,7 @@
 <?php $travels_query = new WP_Query([
   'post_type' => 'wcm_travel',
-  'posts_per_page' => 4,
+  'posts_per_page' => 3,
+  'orderby' => 'rand',
 ]) ?>
 
 
@@ -9,7 +10,7 @@
   <?php
   if ($travels_query->have_posts()) :
     while ($travels_query->have_posts()) : $travels_query->the_post(); ?>
-      <div class="pt-2 text-center col-sm  ">
+      <div class="pt-5 text-center col-sm  " id="featured-links">
 
         <a href="<?php
                   the_permalink(); ?>">

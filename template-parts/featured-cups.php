@@ -9,7 +9,7 @@
     <?php
     if ($cups_query->have_posts()) :
         while ($cups_query->have_posts()) : $cups_query->the_post(); ?>
-            <div class="pt-2 text-center col-sm">
+            <div class="pt-5 text-center col-sm" id="featured-links">
 
                 <a href="<?php
                             the_permalink(); ?>">
