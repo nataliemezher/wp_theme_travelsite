@@ -64,6 +64,7 @@ if (!function_exists('mercury_theme_setup')) {
 		//load_theme_textdomain( 'wcmtheme', get_template_directory() . '/language' );
 
 		add_image_size('wcm-gallery', '500', '300', true);
+		add_image_size('featured_gallery', '300', '150', true);
 	}
 }
 add_action('after_setup_theme', 'mercury_theme_setup');
@@ -93,6 +94,12 @@ function social_link_classes($classes, $item, $args)
 
 add_filter('nav_menu_css_class', 'social_link_classes', 10, 4);
 
+function tn_custom_excerpt_length($length)
+{
+	return 15;
+}
+add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
+
 /**
  * Registrera en Custom Post Type
  * https://developer.wordpress.org/plugins/post-types/
@@ -112,7 +119,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 
 	register_post_type('travel_matches', [
@@ -124,7 +131,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 
 	register_post_type('travel_cup', [
@@ -136,7 +143,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 
 	register_post_type('travel_camp', [
@@ -148,7 +155,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 
 	register_post_type('travel_soccer', [
@@ -160,7 +167,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 
 	register_post_type('netr_team', [
@@ -172,7 +179,7 @@ function my_custom_post_type()
 		'has_archive' => true,
 		'rewrite'     => [],
 		'menu_icon'   => '',
-		'supports'    => [],
+		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
 	]);
 }
 
@@ -224,7 +231,8 @@ function my_custom_tax()
 	];
 	register_taxonomy('travel_sport_league', ['wcm_travel', 'travel_camp', 'travel_cup', 'travel_soccer', 'page'], $args);
 
-	//--
+	//--travel_cup----- get_taxonomy ( TACONOMY)
+	///GET-TEmplatepart ->in i filen c,sen content,sen get taxonomy
 	$labels = [
 		'name'              => _x('travel sport types', 'taxonomy general name'),
 		'singular_name'     => _x('travel sport type', 'taxonomy singular name'),

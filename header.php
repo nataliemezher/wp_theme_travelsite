@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-    <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-center">
         <div class="container-fluid">
 
             <?php if (function_exists('the_custom_logo')) {
@@ -19,14 +19,18 @@
             } ?>
 
             <a href="#"><img class="mb-3 mx-auto logo" width="60" height="40" src="<?php echo $logo[0] ?>" alt="Sitelogo"></a>
-            <?php wp_nav_menu([
-                'theme_location' => 'primary',
-                'container' => '',
-                'items_wrap' => '<ul class="navbar-nav"> %3$s </ul>'
 
-            ]);
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <?php wp_nav_menu([
+                    'theme_location' => 'primary',
+                    'container' => '',
+                    'items_wrap' => '<ul class="navbar-nav mr-auto "> %3$s </ul>'
 
-            ?>
+                ]);
+
+                ?>
+            </div>
+        </div>
 
 
         </div>
