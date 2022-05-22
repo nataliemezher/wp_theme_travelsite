@@ -110,82 +110,82 @@ add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
  * https://developer.wordpress.org/reference/functions/register_post_type/
  *
  */
-function my_custom_post_type()
-{
-	register_post_type('wcm_travel', [
-		'labels'      => [
-			'name'          => __('wcm travels'),
-			'singular_name' => __('wcm travel'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
+// function my_custom_post_type()
+// {
+// 	register_post_type('wcm_travel', [
+// 		'labels'      => [
+// 			'name'          => __('wcm travels'),
+// 			'singular_name' => __('wcm travel'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
 
-	register_post_type('travel_matches', [
-		'labels'      => [
-			'name'          => __('travel matches'),
-			'singular_name' => __('travel match'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
+// 	register_post_type('travel_matches', [
+// 		'labels'      => [
+// 			'name'          => __('travel matches'),
+// 			'singular_name' => __('travel match'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
 
-	register_post_type('travel_cup', [
-		'labels'      => [
-			'name'          => __('travel cups'),
-			'singular_name' => __('travel cup'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
+// 	register_post_type('travel_cup', [
+// 		'labels'      => [
+// 			'name'          => __('travel cups'),
+// 			'singular_name' => __('travel cup'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
 
-	register_post_type('travel_camp', [
-		'labels'      => [
-			'name'          => __('travel camps'),
-			'singular_name' => __('travel camp'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
+// 	register_post_type('travel_camp', [
+// 		'labels'      => [
+// 			'name'          => __('travel camps'),
+// 			'singular_name' => __('travel camp'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
 
-	register_post_type('travel_soccer', [
-		'labels'      => [
-			'name'          => __('travel soccer'),
-			'singular_name' => __('travel soccer'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
+// 	register_post_type('travel_soccer', [
+// 		'labels'      => [
+// 			'name'          => __('travel soccer'),
+// 			'singular_name' => __('travel soccer'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
 
-	register_post_type('netr_team', [
-		'labels'      => [
-			'name'          => __('netr teams'),
-			'singular_name' => __('netr team'),
-		],
-		'public'      => true,
-		'has_archive' => true,
-		'rewrite'     => [],
-		'menu_icon'   => '',
-		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
-	]);
-}
+// 	register_post_type('netr_team', [
+// 		'labels'      => [
+// 			'name'          => __('netr teams'),
+// 			'singular_name' => __('netr team'),
+// 		],
+// 		'public'      => true,
+// 		'has_archive' => true,
+// 		'rewrite'     => [],
+// 		'menu_icon'   => '',
+// 		'supports'    => ['title', 'editor', 'thumbnail', 'custom-fields'],
+// 	]);
+// }
 
-add_action('init', 'my_custom_post_type',);
+// add_action('init', 'my_custom_post_type',);
 
 /**
  * Registrera Custom Taxonomies

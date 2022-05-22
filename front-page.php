@@ -23,8 +23,8 @@
 
 
     <div class="text-center row pt-5" id="smallmeny">
-        <div class="col-md-4 "><a href="traningslager"> <button class="btn btn-outline-secondary">TräningsLäger</button></a> </div>
-        <div class="col-md-4"><a href="travel_cups"><button class="btn btn-outline-secondary">Cuper</button></a> </div>
+        <div class="col-md-4 "><a href="traningslager"> <button class="btn btn-outline-secondary">Träningsläger</button></a> </div>
+        <div class="col-md-4"><a href="cups"><button class="btn btn-outline-secondary">Cuper</button></a> </div>
         <div class="col-md-4 "><a href="fotbollsresor"><button class="btn btn-outline-secondary">Fotbollsresor</button></a> </div>
 
     </div>

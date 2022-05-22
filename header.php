@@ -26,8 +26,8 @@
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'primary',
-                        'menu' => 'primary',
-                        'container' => '',
+                        'menu' => 'custom',
+                        'container' => 'nav',
                         'items_wrap' => '<ul class="navbar-nav">%3$s</ul>'
                     )
                 ); ?>
