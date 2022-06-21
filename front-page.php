@@ -6,7 +6,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-7 col-md-12">
                     <div class="py-8 py-lg-0 text-center">
-                        <h1 class="display-2  mb-3 text-primary"><span class="text-light px-3 px-md-0">Travel Site</span>
+                        <h1 class="display-2  mb-3 text-primary"><span id="fp-title" class="text-light px-3 px-md-0">Travel Site</span>
                         </h1>
                         <div class=" mb-2 text-light bg-secondary">
                             <?php the_content(); ?>
@@ -23,9 +23,9 @@
 
 
     <div class="text-center row pt-5" id="smallmeny">
-        <div class="col-md-4 "><a href="traningslager"> <button class="btn btn-outline-secondary">Träningsläger</button></a> </div>
-        <div class="col-md-4"><a href="cups"><button class="btn btn-outline-secondary">Cuper</button></a> </div>
-        <div class="col-md-4 "><a href="fotbollsresor"><button class="btn btn-outline-secondary">Fotbollsresor</button></a> </div>
+        <div class="col-md-4 "><a href="travel_camp"> <button class="btn btn-outline-secondary">Träningsläger</button></a> </div>
+        <div class="col-md-4"><a href="travel_cup"><button class="btn btn-outline-secondary">Cuper</button></a> </div>
+        <div class="col-md-4 "><a href="travel_soccer"><button class="btn btn-outline-secondary">Fotbollsresor</button></a> </div>
 
     </div>
 

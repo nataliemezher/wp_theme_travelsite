@@ -1,4 +1,4 @@
-<div class="pt-5  text-center">
+<div class="pt-5 pb-5  text-center">
     <h3>Newsletter</h3>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, officiis.</p>
     <div>

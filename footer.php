@@ -1,4 +1,4 @@
-<footer class="bg-light text-center text-lg-start">
+<footer class=" text-center text-lg-start">
 	<!-- Copyright -->
 	<div class="container-fluid text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
 		<?php wp_nav_menu(

@@ -1,16 +1,17 @@
-<?php get_header(); ?>
-<div class="container pt-2">
+<?php get_header();
+?><div class="container pt-2">
     <div class="py-lg-18 py-10 bg-auto pb-5" style="background: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.collegescholarshipsusa.com/wp-content/uploads/2021/06/traveling.png)no-repeat , linear-gradient(180deg, rgba(0, 0, 0, 0) 100%, #000000 100%), rgba(0, 0, 0, 0.5) ; background-size: cover; background-position: top center">
         <div class="container">
             <!-- Hero Section -->
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-7 col-md-12">
                     <div class="py-8 py-lg-0 text-center">
-                        <h2 id="article-title" class="display-2 pt-5  mb-3 text-primary">
-                            <p class="text-light px-3 px-md-0"> <?php the_title(); ?></p>
-                        </h2>
+                        <h1 class="display-2 pt-5 mb-3 text-primary"><span class="text-light px-3 px-md-0">Fotbollsresor</span></h1>
+                        <div class=" mb-2 text-light bg-secondary">
 
-                        <a href="#" class="btn btn-primary">CTA</a>
+                        </div>
+
+                        <a href="#" class="btn btn-secondary">CTA</a>
 
                     </div>
                 </div>
@@ -18,17 +19,12 @@
             </div>
         </div>
     </div>
-    <h2>PAGE.PHP</h2>
-    <div id="content-display" class="pt-5 mb-2 row ">
-        <?php the_content(); ?>
+    <div class="row">
 
-    </div>
-
-
-    <div class="row pt-5">
-        <div class="col-sm">
-            <h2>HEADING</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores beatae architecto ratione accusamus? Magnam adipisci similique alias modi sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit esse placeat eligendi porro maxime sed quaerat unde facilis quasi quas excepturi eum, similique asperiores nisi beatae dolor cupiditate quisquam, totam fuga nihil pariatur. Aliquid obcaecati ab reiciendis quia numquam, ea rerum minima culpa cumque, illo dignissimos. Expedita ullam soluta ipsa.</p>
+        <!-- HEADING w pic  -->
+        <div class="col-sm pt-5">
+            <h2>Fotbollsresor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus similique maxime repellat nostrum commodi nobis ipsum nesciunt dolor. Laborum doloremque cum at numquam rerum quis tempore eveniet expedita repellat?</p>
 
         </div>
         <div class="col-sm">
@@ -38,8 +34,10 @@
 
     </div>
 
-    <!-- trip details-->
+
+
     <?php
+    get_template_part('template-parts/featured-soccer');
     get_template_part('template-parts/tripdetails');
     ?>
     <?php

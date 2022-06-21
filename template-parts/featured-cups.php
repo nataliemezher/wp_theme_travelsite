@@ -9,12 +9,12 @@
     <?php
     if ($cups_query->have_posts()) :
         while ($cups_query->have_posts()) : $cups_query->the_post(); ?>
-            <div class="pt-5 text-center col-sm" id="featured-links">
+            <div class=" pt-5 text-center col-sm" id="featured-links">
 
                 <a href="<?php
                             the_permalink(); ?>">
-                    <p><?php
-                        the_title(); ?></p>
+                    <p class="card-title"><?php
+                                            the_title(); ?></p>
                 </a>
 
                 <div id="our-post-thumbnail">

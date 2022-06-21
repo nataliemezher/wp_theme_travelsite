@@ -1,6 +1,5 @@
 nav {  
-    background-color: rgb(195, 160, 219);
- 
+  background-color: rgb(179, 205, 243);
   }
 
 nav {
@@ -20,19 +19,51 @@ nav .dropdown-item{
  } 
  
 
- #searchbar{
-   background-color: rgb(211, 195, 226);
- }
- #featured-links a{
-   font-size: 18px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-decoration: none;
-   color: black;
- }
- #spotlight{ 
-   background-color: rgb(211, 195, 226);
 
- }
+ #searchbar{
+    background-color: rgb(179, 205, 243);
+}
+#featured-links a{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+#spotlight{ 
+    background-color: rgb(179, 205, 243);
+ 
+}
+#article-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 45px;
+      
+}
+#fp-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    
+}
+#content-display a{
+    text-decoration: none;
+    color: rgb(85, 85, 170);
+
+
+}
+
+footer {
+    background-color: rgb(179, 205, 243);
+}
+footer {
+    
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(35, 8, 61);
+}
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

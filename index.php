@@ -3,6 +3,8 @@
 	<div>
 		<?php the_content(); ?>
 	</div>
+	<h2>INDEX.PHP</h2>
+
 
 
 
